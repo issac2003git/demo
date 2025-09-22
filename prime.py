@@ -1,13 +1,8 @@
 num=int(input('ENter a number:'))
 
-cnt=0
-d=1
-while d<=num:
+for d in range(2,(num//2)+1):
     if num%d==0:
-        cnt=cnt+1
-
-    d=d+1
-if cnt==2:
-    print('prime')
+        print('not prime')
+        break
 else:
-    print('not prime')
+    print('prime')
